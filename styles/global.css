@@ -21,8 +21,47 @@
   --font-inconsolata: "Inconsolata", monospace;
   --font-mavenpro: "Maven Pro", sans-serif;
 
+  --h1: 700 56px/120% var(--font-asap);
+  --h2: 700 24px/120% var(--font-asap);
+  --h3: 700 16px/120% var(--font-asap);
+
   --subtitle: 400 20px/120% var(--font-inconsolata);
 
   --text-md: 400 16px/140% var(--font-mavenpro);
   --text-sm: 400 14px/140% var(--font-mavenpro);
+}
+
+body {
+  font: var(--text-md);
+  color: var(--gray-500);
+  background-color: var(--gray-200);
+}
+
+h1 {
+  font: var(--h1);
+}
+
+h2 {
+  font: var(--h2);
+}
+
+h3 {
+  font: var(--h3);
+}
+
+a {
+  text-decoration: none;
+  transition: filter 0.3s ease;
+
+  &:hover {
+    filter: brightness(.9);
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.gray-100 {
+  background-color: var(--gray-100);
 }
